@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <meta charset="utf-8">
+    <title>US Crime Heatmap</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <style>
+        img {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+        }
+        </style>
+</head>
+
+<body>
+    <script src='https://cdn.plot.ly/plotly-latest.min.js'></script>
+
+    <h1 style="text-align:center">Crime Rates By State</h1>
+
+    <img src="crime.jpeg" alt="Crime Data" usemap="#crime" width="500" height="200" class="center">
+    
+    <script type="text/javascript" src="pltyusmap.js"></script>
+
+	<div id='myDiv'><!-- Plotly chart will be drawn inside this DIV --></div>
+</body>
+</html>
