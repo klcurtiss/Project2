@@ -1,49 +1,64 @@
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="en-us">
 
 <head>
-    <meta charset="utf-8">
-    <title>US Crime Heatmap</title>
-    <link rel="stylesheet" type="text/css" href="style.css">
-    <title>US Crime Rates Dashboard</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
-    <link rel="stylesheet" href="style.css">
-    <style>
-        img {
-          display: block;
-          margin-left: auto;
-          margin-right: auto;
-        }
-        </style>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+
+ 
+  <title>US Crime Rates Dashboard</title>
+
+ 
+  <link rel="stylesheet" href="style.css">
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+    
+    .column {
+      float: left;
+      width: 33.33%;
+      padding: 5px;
+    }
+    
+    /* Clearfix (clear floats) */
+    .row::after {
+      content: "";
+      clear: both;
+      display: table;
+    }
+    </style>
 </head>
 
 <body>
-  <nav class="navbar navbar-default">
+  <nav class="navbar navbar-inverse">
     <div class="container-fluid">
-
       <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-      <a class="navbar-brand" href="index.html">US Crime Rates Dashboard</a>
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="index.html">Home</a>
       </div>
-    
-
-      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-      
-        <ul class="nav navbar-nav navbar-right">
-                            <li class="dropdown"></li>
-                            <li><a href="AboutUs.html">About Us</a></li>
-                            <li><a href="heatmap.html">US Heatmap</a></li>
-                            <li><a href="Data.html">Crime Data</a></li>
-                            <li><a href="Angel.html">Leaflet</a></li>
-                            <li><a href="Kevin.html">Bubble</a></li>
-                            <li><a href="Tunde.html">NJ Crime Rates</a></li>
-          </ul>
+      <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="nav navbar-nav">
+          <li><a href="AboutUs.html">About Us</a></li>
+								                <li><a href="heatmap.html">US Heatmap</a></li>
+                                <li><a href="Data.html">Crime Data</a></li>
+                                <li><a href="Angel.html">Leaflet</a></li>
+                                <li><a href="Kevin.html">Bubble</a></li>
+                                <li><a href="Tunde.html">NJ Crime Rates</a></li>
+        </ul>
+        
       </div>
     </div>
-    </nav>
+  </nav>
