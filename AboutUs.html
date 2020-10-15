@@ -1,64 +1,136 @@
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <!DOCTYPE html>
-<html lang="en-us">
+<html lang="en">
 
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <meta charset="UTF-8">
+    <title>Crimes Data</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+   <!-- Bootstrap/Bootswatch CSS -->
+   <link rel="stylesheet" href="https://bootswatch.com/4/lux/bootstrap.min.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-
- 
-  <title>FBI US Crime Rates</title>
-
- 
-  <link rel="stylesheet" href="style.css">
-  <style>
-    * {
-      box-sizing: border-box;
-    }
-    
-    .column {
-      float: left;
-      width: 33.33%;
-      padding: 5px;
-    }
-    
-    /* Clearfix (clear floats) */
-    .row::after {
-      content: "";
-      clear: both;
-      display: table;
-    }
-    </style>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
-  <nav class="navbar navbar-inverse">
-    <div class="container-fluid">
-      <div class="navbar-header">
-        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-        </button>
-        <a class="navbar-brand" href="index.html">Home</a>
-      </div>
-      <div class="collapse navbar-collapse" id="myNavbar">
-        <ul class="nav navbar-nav">
-          <li><a href="AboutUs.html">About Us</a></li>
-          <li><a href="crimes_data.html">Crime Data</a></li>
-          <li><a href="heatmap.html">US Heatmap</a></li>
-          <li><a href="Angel.html">Leaflet</a></li>
-          <li><a href="Kevin.html">Bubble</a></li>
-          <li><a href="Tunde.html">NJ Crime Rates</a></li>
+  <nav id="navbar" class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top p-1">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">Home</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor02" aria-controls="navbarColor02" aria-expanded="false" aria-label="Toggle navigation" style="">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarColor02">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="AboutUs.html">About Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link " href="crimes_data.html">Crime Data</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link " href="heatmap.html">US Heatmap</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="Angel.html">Leaflet</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="Homicide.html">Bubble</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="Tunde.html">NJ Crime Rates</a></a>
+          </li>
         </ul>
-        
       </div>
     </div>
   </nav>
+  <br>
+      <div class="container">
+        <div class="jumbotron text-center">
+            <h2 id="about" class="my-2">Our Mission</h2>
+            <h6>To provide you with actionable United States Crime related data</h6>
+            <hr>
+            <div class="row">
+              <div class="col-md-12">
+                <p class="lead mt-3">We have provided useful and important data for all different types of crime in the U.S.</p>
+              </div><!-- /column -->
+            </div><!-- /row -->
+        </div>
+      </div><!-- /header -->
+
+      <div class="container">
+        <!-- card deck 1-->
+        <div class="card-deck">
+          <div class="card bg-dark">
+              <img style="height: 10rem;" class="card-img-top" src="images/kevin.jpg" alt="Kevin Buron">
+              <div class="card-body">
+                <p class="card-title lead text-white">Kevin Buron</p>
+                <h6 style="color: white;">Hobbies</h6>
+                <ul style="color: white;">
+                    <li>Basketball</li>
+                    <li>Videogames</li>
+                    <li>Favorite Drink: Fernet and Coke</li>
+                  </ul>
+              </div>
+          </div>
+          <div class="card bg-light">
+              <img style="height: 10rem;" class="card-img-top" src="images/kelly.png" alt="Kelly Curtiss">
+              <div class="card-body">
+                <p class="card-title lead text-black">Kelly Curtiss</p>
+                <h6 style="color: Black;">Hobbies</h6>
+                <ul>
+                  <li>"I don't just wrangle data, I wrangle kids and pets"</li>
+                  <li>I'm a Lacrosse Mom of 2 teenage daughters a Pet Mom of 2 Dogs & 2 Guinea Pigs</li>
+                  <li>Favorite Drink: A tall glass of Merlot</li>
+                  </ul>
+              </div>
+          </div>
+      
+          <div class="card bg-dark">
+              <img style="height: 10rem;" class="card-img-top" src="images/kanika.jpg" alt="Kanika Jain">
+              <div class="card-body">
+                <p class="card-title lead text-white">Kanika Jain</p>
+                <h6 style="color: white;">Hobbies</h6>
+                <ul style="color: white;">
+                  <li>Salsa Dancing</li>
+                  <li>Music (All genres!)</li>
+                  <li>Favorite Drink: Bubble Tea</li>
+                  </ul>
+              </div>
+          </div>
+          <div class="card bg-light">
+              <img style="height: 10rem;" class="card-img-top" src="images/angel.png" alt="Angel Popa">
+              <div class="card-body">
+                <p class="card-title lead text-black">Angel Popa</p>
+                <h6 style="color: Black;">Hobbies</h6>
+                <ul>
+                  <li>Working out</li>
+                  <li>Skateboarding</li>
+                  <li>Favorite Drink: Passion Fruit Juice</li>
+                  </ul>
+              </div>
+          </div>
+      
+          <div class="card bg-dark">
+              <img style="height: 10rem;" class="card-img-top" src="images/tunde.png" alt="Babatunde Salisu">
+              <div class="card-body">
+                <p class="card-title lead text-white">Babatunde Salisu</p>
+                <h6 style="color: white;">Hobbies</h6>
+                <ul style="color: white;">
+                  <li>Guinness Aficionado</li>
+                  <li>Loves Dessert (Tiramisu)</li>
+                  <li>Running</li>
+                  </ul>
+              </div>
+          </div>
+        </div>
+      </div>
+
+
+    <br>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+</body>
+
+</html>
