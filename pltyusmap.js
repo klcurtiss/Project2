@@ -7,7 +7,7 @@ Plotly.d3.csv("US_State_Crime_Rates.csv", function(err, rows){
   var frames = []
   var slider_steps = []
 
-  var n = 7;
+  var n = 24;
   var num = 1995;
   for (var i = 0; i <= n; i++) {
     var z = filter_and_unpack(rows, 'crime_rate', num)
@@ -23,7 +23,7 @@ Plotly.d3.csv("US_State_Crime_Rates.csv", function(err, rows){
           }
         ]
       })
-    num = num + 3
+    num = num + 1
   }
 
 var data = [{
@@ -38,7 +38,7 @@ var data = [{
 
 }];
 var layout = {
-    title: 'US State Crime Rate Averages <br>1995 - 2016',
+    title: 'US State Crime Rate Averages <br>1995 - 2019',
     geo:{
        scope: 'usa',
        countrycolor: 'rgb(255, 255, 255)',
