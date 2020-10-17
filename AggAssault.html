@@ -10,6 +10,16 @@
 <body>
   <div class="container">
     <div class="row">
+        <div class="dropdown">
+          <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Choose Crime
+          </button>
+          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+            <a class="dropdown-item" href="Homicide.html">Homicide</a>
+            <a class="dropdown-item" href="AggAssault.html">Aggravated Assault</a>
+            <a class="dropdown-item" href="MVT.html">Motor Vehicle Theft</a>
+          </div>
+        </div>
       <div class="col-md-2">
         <aside class="filters">
           <div class="panel panel-default">
@@ -27,22 +37,14 @@
           </div>
         </aside>
       </div>
-        <div class="col-md-2">
-        <div class="dropdown">
-          <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            Choose Crime
-          </button>
-          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-            <a class="dropdown-item" href="Homicide.html">Homicide</a>
-            <a class="dropdown-item" href="AggAssault.html">Aggravated Assault</a>
-            <a class="dropdown-item" href="MVT.html">Motor Vehicle Theft</a>
-          </div>
-        </div>
-      </div>
     </div>
+    <div class="row">
+      <div id="bubble"></div>
+    </div>
+    <div class="row">
+      <div id="chart"></div>
   </div>
-<!-- Create a div where the graph will take place -->
-<div id="bubble"></div>
+
 <!-- Load d3.js -->
 <script src="https://d3js.org/d3.v4.js"></script>
 
@@ -50,6 +52,7 @@
 
 <script src="https://d3js.org/d3-scale-chromatic.v1.min.js"></script>
 <script type="text/javascript" src = "circpacking_AA.js"></script>
+<script type="text/javascript" src = "Bar_AA.js"></script>
 
 
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>

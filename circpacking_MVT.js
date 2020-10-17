@@ -1,9 +1,9 @@
 var form = d3.select("#date");
-form.on("input",finddata);
+form.on("input",finddataMVT1);
 
 // set the dimensions and margins of the graph
-var width = 760
-var height = 560
+var width = 960
+var height = 660
 
 // append the svg object to the body of the page
 var svg = d3.select("#bubble")
@@ -11,7 +11,7 @@ var svg = d3.select("#bubble")
     .attr("width", width)
     .attr("height", height)
 
-    function finddata(){
+    function finddataMVT1(){
       svg.html("")
 
 // Read data
@@ -30,7 +30,7 @@ d3.csv("DataForCirc/cleaned_data.csv", function(data) {
   var mappeddata = data1.map(d => d.motor_vehicle_theft)
   
   // Create a scale for the colors
-  var color = d3.scaleSequential(d3.interpolateYlGnBu).domain([0,d3.max(mappeddata)])
+  var color = d3.scaleSequential(d3.interpolateBuGn).domain([0,d3.max(mappeddata)])
     
   // Size scale for circles
   var sizecircle = d3.scaleLinear()
@@ -152,5 +152,5 @@ d3.csv("DataForCirc/cleaned_data.csv", function(data) {
   }
 
 })
-    }
+finddataMVT2() }
 
