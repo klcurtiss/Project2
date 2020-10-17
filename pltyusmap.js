@@ -38,7 +38,7 @@ var data = [{
 
 }];
 var layout = {
-    title: 'US State Crime Rate Averages <br>1995 - 2019',
+   
     geo:{
        scope: 'usa',
        countrycolor: 'rgb(255, 255, 255)',
