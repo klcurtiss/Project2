@@ -14,11 +14,14 @@ var myMap = L.map("map", {
   }).addTo(myMap);
 
   var geojson;
-  var link = "countyMapCountyCrim.geojson";
+  var link = "mergeOffencesCounty1.geojson";
   // var link = "CrimeCity.geojson"
+  
 
 // Grabbing our GeoJSON data..
 d3.json(link, function(data) {
+
+  
   
   console.log(data)    
   
@@ -32,7 +35,7 @@ d3.json(link, function(data) {
     scale: ["#ffffb2", "#b10026"],
 
     // Number of breaks in step range
-    steps: 7,
+    steps: 10,
 
     // q for quartile, e for equidistant, k for k-means
     mode: "q",
@@ -40,6 +43,7 @@ d3.json(link, function(data) {
       // Border color
       color: "#0aa80d",
       weight: 1,
+      
       fillOpacity: 0.5
     },
     filter: function(feature, layer) {
@@ -51,7 +55,8 @@ d3.json(link, function(data) {
     onEachFeature: function(feature, layer) {
       layer.bindPopup(`County:  ${feature.properties.NAME} <br> <hr>
                         CRIME RATE:  ${feature.properties.Crime_rate} <br> <hr>
-                        SUMMARY:  ${feature.properties.Status} <br>`);
+                        SUMMARY:  ${feature.properties.Status} <br>
+                        Offences:  ${feature.properties.Offenses} <br>`);
     }
   }).addTo(myMap);  
 
@@ -67,8 +72,8 @@ d3.json(link, function(data) {
       // Add min & max
     var legendInfo = "<h1>Offence Total</h1>" +
     "<div class=\"labels\">" +
-      "<div class=\"min\">" + limits[0] + "</div>" +
-      "<div class=\"max\">" + limits[limits.length - 1] + "</div>" +
+      "<div class=\"min\">MINIMUM: " + limits[0] + "</div>" +
+      "<div class=\"max\">MAXIMUM: " + limits[limits.length - 1] + "</div>" +
     "</div>";
 
   div.innerHTML = legendInfo;
